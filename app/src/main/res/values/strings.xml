@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Phrases encourageantes</string>
+    <string name="first">Tapez sur l\'écran pour recevoir des encouragements!</string>
+    <string-array name="sentences">
+        <item>Continue comme ça mon grand/ma grande!</item>
+        <item>Attaboy/attagirl!</item>
+        <item>Je crois en toi!</item>
+        <item>Tu es pas arrêtable!</item>
+        <item>Check-toi ben aller!</item>
+        <item>T\'as l\'doua!</item>
+        <item>Ah ben ga-don ça si c\'est pas la championne/le champion!</item>
+        <item>Aweille continue comme ça!</item>
+        <item>Lâche-pas ma cocotte/mon coco!</item>
+        <item>Pourquoi le poulet a traversé la rue?  Parce qu\'il avait un rêve.  Soit comme le
+            poulet!</item>
+        <item>Let\'s go mon coco/ma cocotte!</item>
+        <item>Je suis fier de toi!</item>
+    </string-array>
+</resources>
