@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         if (!silenced) {
             mediaPlayer.start();
         }
-        Log.d(TAG, "ON CREATE");
     }
 
     @Override
