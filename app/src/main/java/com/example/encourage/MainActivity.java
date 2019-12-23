@@ -8,7 +8,6 @@ import android.animation.ObjectAnimator;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     private String[] sentences;
     private ObjectAnimator fadeIn;
     private ObjectAnimator fadeOut;
-    private ObjectAnimator creditFade;
     private int fadeInTime;
     private int fadeOutTime;
     private MediaPlayer mediaPlayer;
@@ -59,7 +57,10 @@ public class MainActivity extends AppCompatActivity {
         //next line only supported in api version 26
         mediaPlayer.seekTo(musicPosition, SEEK_CLOSEST);
         if (!silenced) {
+            musicToggle.setForeground(getDrawable(R.drawable.music_on));
             mediaPlayer.start();
+        }else{
+            musicToggle.setForeground(getDrawable(R.drawable.music_off));
         }
     }
 
@@ -127,9 +128,11 @@ public class MainActivity extends AppCompatActivity {
     //toggles background music
     public void tapMusic(View view){
         if (mediaPlayer.isPlaying()){
+            musicToggle.setForeground(getDrawable(R.drawable.music_off));
             mediaPlayer.pause();
             silenced = true;
         }else{
+            musicToggle.setForeground(getDrawable(R.drawable.music_on));
             mediaPlayer.start();
             silenced = false;
         }
