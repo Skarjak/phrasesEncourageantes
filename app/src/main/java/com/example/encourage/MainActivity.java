@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     static final String STATE_MUSIC = "musicPosition";
     static final String STATE_SILENCED = "musicSilenced";
     boolean silenced = false;
+    private int lastSeed = 0;
+    private int currentSeed;
 
 
     @Override
@@ -111,6 +113,10 @@ public class MainActivity extends AppCompatActivity {
 
     //changes displayed text
     private void fetchSentence() {
+        currentSeed = (int)floor(random()*sentences.length);
+        while(currentSeed == lastSeed) {
+            currentSeed = (int)floor(random()*sentences.length);
+        }
         fadeIn = ObjectAnimator.ofFloat(textView,"alpha", 1f);
         fadeIn.setDuration(fadeInTime);
         fadeOut = ObjectAnimator.ofFloat(textView,"alpha", 0f);
@@ -118,7 +124,8 @@ public class MainActivity extends AppCompatActivity {
         fadeOut.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                textView.setText(sentences[(int)floor(random()*sentences.length)]);
+                textView.setText(sentences[currentSeed]);
+                lastSeed = currentSeed;
                 fadeIn.start();
             }
         });

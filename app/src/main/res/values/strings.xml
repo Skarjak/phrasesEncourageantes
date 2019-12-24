@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Phrases encourageantes</string>
     <string name="first">Tapez sur l\'écran pour recevoir des encouragements!</string>
-    <string name="musicCredit">Musique: Starling - Podington Bear \n soundofpicture.com</string>
+    <string name="musicCredit">Musique: Starling - Podington Bear \nsoundofpicture.com</string>
     <string-array name="sentences">
         <item>Continue comme ça mon grand/ma grande!</item>
         <item>Attaboy/attagirl!</item>
@@ -24,7 +24,7 @@
         <item>Yes!  Tu vas l\'avoir!</item>
         <item>Je sais que tu l\'as en toi!</item>
         <item>Regarde-toi!  T\'es don-ben badass!</item>
-        <item>Attention il y a quelqu\'un de vraiment awesome dans la pièce...;  C\'est toi!</item>
+        <item>Attention il y a quelqu\'un de vraiment awesome dans la pièce...  C\'est toi!</item>
         <item>Ah hell naw, c\'est pas vrai que tu vas abandonner!</item>
         <item>La dernière fois que j\'ai été autant impressionné par quelqu\'un le dude avait mangé
             genre 30 hot-dogs en deux minutes.</item>
