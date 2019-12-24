@@ -1,4 +1,4 @@
-package com.example.encourage;
+package com.projets110.encourage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -76,11 +76,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause(){
         super.onPause();
-        //mediaPlayer.pause();
-        //musicPosition = mediaPlayer.getCurrentPosition();
         musicPosition = mediaPlayer.getCurrentPosition();
         mediaPlayer.pause();
-        //mediaPlayer.release();
     }
 
     @Override
@@ -98,13 +95,6 @@ public class MainActivity extends AppCompatActivity {
             mediaPlayer.start();
         }
     }
-
-  //  @Override
-  //  protected void onStop(){
-  //      super.onStop();
-  //      mediaPlayer.stop();
-  //      mediaPlayer.release();
-  //  }
 
     //called when screen is tapped
     public void tapSentence(View view) {
